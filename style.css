@@ -147,6 +147,10 @@ img{
       color: mediumvioletred;
     }
 
+    90%{
+        color: aqua;
+    }
+
     100%{
       color: olive;
     }
