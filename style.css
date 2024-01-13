@@ -1,0 +1,355 @@
+
+ body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(running.jpg);
+    background-size: cover; 
+    width:100%;
+    height: 100%;
+}
+.header{
+   height: 100px;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.left{
+    width: 200px;
+    /* border: 5px solid orange; */
+    position: absolute;
+    left:34px;
+    top:18px;
+}
+
+.mid{
+ 
+  width: 33%;
+  margin: 18px auto;
+  
+}
+
+ .mid a:hover{
+    color:#00e600;
+    box-shadow: 2px 2px 20px black;
+    text-decoration: underline;
+}
+
+.right{
+     /* border: 2px solid red; */
+     display: inline-block;
+     position: absolute;
+     right:34px;
+     top: 30px;
+
+}
+ .navbar{
+     list-style-type: none;
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+}
+
+
+
+
+.navbar a{
+    text-decoration: none;
+    color: aliceblue;
+     font-size: larger;
+     font-weight: bold;
+}
+
+
+
+.btn{
+    width:120px;
+    background-color:#00ffff ;
+    color:darkslategrey;
+    font-size: medium;
+    font-weight:bold ;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
+    padding: 5px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 8px white;
+}
+
+#span1{
+    font-size: 65px;
+    font-weight: bolder;
+    color: greenyellow;
+}
+
+h2{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    display: inline-block;
+    position: absolute;
+    margin:5px;
+    left: 100px;
+    font-size: 35px;
+
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+
+.form{
+    height: 700px;
+    width: 500px;
+    margin: 70px;
+    padding: 10px;
+    border-radius: 24px;
+    border: 5px solid aqua;
+    box-shadow: 4px 4px 40px black;
+    color: #EEB76B;
+    font-weight: bolder;
+}
+
+
+.ab{
+    text-align: center;
+    color:#5d0a20;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 24px;
+    animation: colorAnimation 10s ease-in-out 3s infinite reverse;
+}
+
+@keyframes colorAnimation{
+    0%{
+        color: lawngreen;
+    }
+
+    20%{
+        color: teal;
+        
+    }
+
+    40%{
+        color: gold;
+    }
+
+    60%{
+        color: limegreen; 
+    }
+
+    80%{
+      color: mediumvioletred;
+    }
+
+    100%{
+      color: olive;
+    }
+}
+
+.buttonchange{
+  position: absolute;
+  left: 400px;
+  top: 770px;
+}
+
+
+.button2{
+  color: aliceblue;
+  background-color: green;
+  height: 30px;
+  width: 500px;
+    
+}
+
+input[id="nme"]{
+     width: 440px;
+}
+
+input[id="mail"]{
+     width: 420px;
+}
+
+input[id="number"]{
+     width: 410px;
+}
+
+input[id="weg"]{
+     width: 430px;
+}
+
+
+input[id="age"]{
+     width: 450px;
+}
+
+ #para{
+    
+    position: absolute;
+    top:150px;
+    right:50px;
+
+  
+} 
+
+#span0{
+    font-size: 20px;
+    font-family: cursive;
+}
+
+#span2{
+    font-size: 70px;
+    font-family: cursive;
+}
+
+#span3{
+    color: orange;
+    font-family: cursive;
+    font-weight: bolder;
+    animation: paraAnimation 10s ease-out 2s  infinite normal; 
+    
+}
+
+@keyframes paraAnimation{
+   0% {
+    color: greenyellow;
+    /* box-shadow:2px 2px 60px white; */
+    transform: rotateY(360deg);
+}
+
+80%{
+    color: deeppink;
+    transform: rotate(360deg);
+      /* box-shadow:2px 2px 100px white; */
+}
+
+100%{
+    color: teal;
+      /* box-shadow:2px 2px 200px white; */
+      transform: rotate(360deg);
+}
+} 
+
+
+@media(max-width:500px){
+    .left{
+      
+         position: relative;
+         left: 5px;
+         top:5px;
+    }
+    .mid{
+        margin:15px auto;
+        position: absolute;
+        top:22px;
+        left:5px;
+    }
+    .right{
+        position: absolute;
+        top:50px;
+        left: 250px;
+    } 
+    .btn{
+        width: 150px;
+    }
+    img{
+        margin: 5px;
+        width: 30px;
+        height:30px;
+    }
+
+    h2{
+        font-size: 20px;
+        margin:5px;
+        position: absolute;
+        top:5px;
+        left:150px
+    }
+
+    .form{
+    height: 650px;
+    width: 340px;
+    margin: 20px;
+    border-radius: 24px;
+    border: 5px solid white;
+    box-shadow: 4px 4px 40px black;
+    position: absolute;
+    top:200px;
+   }
+
+   
+input[id="nme"]{
+     width: 220px;
+}
+
+input[id="mail"]{
+     width: 220px;
+}
+
+input[id="number"]{
+     width: 200px;
+}
+
+input[id="weg"]{
+     width: 220px;
+}
+
+
+input[id="age"]{
+     width: 220px;
+}
+
+#addr{
+    height: 50px;
+    width: 250px;
+}
+
+.button2{
+
+  height: 30px;
+  width: 340px;
+    
+}
+
+.buttonchange{
+  position: absolute;
+  left: 200px;
+  top: 551px;
+}
+
+
+ #para{
+    
+    position: absolute;
+    top:900px;
+    left: 50px;
+
+  
+} 
+
+#span0{
+    font-size: 20px;
+    font-family: cursive;
+}
+
+#span2{
+    font-size: 40px;
+    font-family: cursive;
+}
+
+#span3{
+    color: orange;
+    font-family: cursive;
+    font-weight: bolder;
+   animation: paraAnimation 2s linear 3s infinite normal; 
+    
+}
+#Question{
+    font-size: 10px;
+}
+}
